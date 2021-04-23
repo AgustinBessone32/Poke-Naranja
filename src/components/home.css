@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contentPoke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentSearch{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.lblSearch{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    animation:  repeat 2.5s linear infinite;
+}
+
+.btnSearch{
+    margin-left: 20px;
+    border-radius: 20px ;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #3b83bd;
+    font-weight: bold;
+    color: white;
+}
+
+.btnSearch:hover{
+    background-color: #dfb706;
+    color: black;
+    transition-duration: 1.3s
+}
+
+.inpName{
+    border: 2px solid black;
+    color: black;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.inpName:focus{
+    outline: 0;
+}
+
+.contentCard{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tipoRed{
+    margin-top: 50px;
+}
+
+.pointBlack{
+    padding: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+
+.contentCardError{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contentCard h3{
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.contentCardError h2{
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    margin-left: 60px;
+    width: 300px;
+    padding: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #D23A3A 0%, #D23A3A 50%, white 50%, white 100% );
+}
+
+.flex2:hover{
+    animation: rotate 8s linear infinite
+}
+
+.pokeImg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 220px;
+    max-width: 220px;
+}
+
+.pokeImg:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+    transition-duration: 2s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.notResultsImg{
+    width: 400px;
+    height: 500px;
+    margin-top: -30px;
+}
+
+.contentAbilities{
+    display: flex;
+    align-items: center;
+}
+
+.ability{
+    padding: 10px;
+    background-color: #a4acaf;
+    margin-left: 10px ;
+    border-radius: 6px;
+    margin-top: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ability:hover{
+    background-color: black;
+    transition-duration: 1.5s;
+}
+
+
+.itemDesc{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.namePoke{
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .contentSearch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnSearch{
+        margin-top: 20px;
+        width: 200px;
+        height: 30px;
+        
+    }
+
+    .flex2{
+        margin-left: -15px;
+        width: 250px;
+    }
+}
+
+@keyframes repeat{
+    25%{
+        color:white;
+    }
+    50%{
+        color: transparent;
+    }
+
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }    
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
