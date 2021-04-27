@@ -9,25 +9,32 @@ const URL = 'https://pokeapi.co/api/v2/pokemon/'
 const Home = () => {
     const [inp , setInp] = useState("")
     const [poke , setPoke] = useState("")
+    const [search , setSearch] = useState(false)
     let heightPoke 
     
 
 
     function getPoke(){
-        
+        setSearch(true)
         if(inp === ""){
-            alert("Por favor ingrese un nombre o ID")
+            alert("Por favor ingrese un nombre o ID del Pokémon")
             setPoke("")
-            
+            setSearch(false)
         }
 
         else{
             axios.get(URL + `${inp}`)
-            .then(response => setPoke(response.data))
-            .catch(error => setPoke("error"))
+            .then(response => {
+                setPoke(response.data)
+                setSearch(false)
+            })
+            .catch(error => {
+                setSearch(false)
+                setPoke("error")
+            })
             
             setInp("")
-            
+
         }
 
     }
@@ -35,26 +42,29 @@ const Home = () => {
     
     if(poke !== "error" && poke !== undefined && poke !== "") heightPoke = poke.height.toString()
     
-    console.log(poke)
 
     return(
         <div className='contentPoke'>
             <img src={Title} width='300px' height='100px'/>
 
-            <label for="name" className='lblSearch'>Ingrese el nombre o ID del Pokemón</label>
+            <label for="name" className='lblSearch'>Ingrese el nombre o ID del Pokémon</label>
 
             <div className='contentSearch'>
-                <input className='inpName' type='text' placeholder='Escribe el pokemon...' id="name" 
+                <input className='inpName' type='text' placeholder='Buscar...' id="name" 
                         value={inp} name="name" onChange={(e) => setInp(e.target.value)}/>
                 
                 <button className='btnSearch' onClick={() => getPoke()}> Consultar </button>
             </div>
 
             {
-                 poke === "error"  ? 
+                search ? <p className='searching'>Buscando...</p>
 
-                 <div className='contentCardError'>
-                     <h2 >Búsqueda sin resultados</h2>
+                :
+
+                    poke === "error"  ? 
+
+                    <div className='contentCardError'>
+                        <h2 >Búsqueda sin resultados</h2>
 
                     <img src={NotResults} alt='Sin resultados' className='notResultsImg' />
                 </div>
@@ -77,6 +87,7 @@ const Home = () => {
 
                             <p className='itemDesc' >Peso : {`${poke.weight / 10} kg`}</p>
 
+                            <p className='point'>.</p>
 
                             <p className='itemDesc' id='tipoRed'>Tipo </p>
 
@@ -101,11 +112,10 @@ const Home = () => {
                         </div>
 
 
-                 </div>
-
-                 
+                    </div>
 
             }
+
 
         </div>
     )

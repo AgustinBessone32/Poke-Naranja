@@ -46,7 +46,7 @@
     border: 2px solid black;
     color: black;
     width: 300px;
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
     padding-left: 10px;
 }
@@ -104,24 +104,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     border: 4px solid black;
     margin-left: 60px;
-    width: 300px;
+    width: 350px;
     padding: 80px;
     border-radius: 50%;
     background: linear-gradient(to top, #D23A3A 0%, #D23A3A 50%, white 50%, white 100% );
 }
 
-.flex2:hover{
-    animation: rotate 8s linear infinite
-}
 
 .pokeImg{
     margin-top: 10px;
     margin-bottom: 10px;
-    min-width: 220px;
-    max-width: 220px;
+    min-width: 290px;
+    max-width: 290px;
 }
 
 .pokeImg:hover{
@@ -135,6 +133,9 @@
     cursor: pointer;
 }
 
+#tipoRed{
+    margin-top: 160px;
+}
 
 .notResultsImg{
     width: 400px;
@@ -176,6 +177,19 @@
 
 }
 
+.searching{
+    margin-top: 10px;
+}
+
+.point{
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
 @media screen and (max-width: 500px) {
     .contentSearch{
         display: flex;
@@ -192,6 +206,23 @@
     .flex2{
         margin-left: -15px;
         width: 250px;
+        padding: 40px
+
+    }
+
+    #tipoRed{
+        margin-top: 50px;
+    }
+
+
+    .point{
+        display: none;
+    }
+
+    .contentAbilities{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -201,17 +232,6 @@
     }
     50%{
         color: transparent;
-    }
-
-}
-
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
-    }    
-
-    to{
-        transform: rotate(360deg);
     }
 
 }
