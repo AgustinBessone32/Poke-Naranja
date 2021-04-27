@@ -63,8 +63,8 @@
     justify-content: center;
 }
 
-#tipoRed{
-    margin-top: 50px;
+#tipoWhite{
+    margin-top: 60px;
 }
 
 .pointBlack{
@@ -109,7 +109,7 @@
     border: 4px solid black;
     margin-left: 60px;
     width: 400px;
-    padding: 65px;
+    padding: 30px;
     border-radius: 50%;
     background: linear-gradient(to top, #D23A3A 0%, #D23A3A 50%, white 50%, white 100% );
 }
@@ -123,10 +123,6 @@
 }
 
 .pokeImg:hover{
-    -webkit-transform:scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
     transform:scale(1.25);
     transition-duration: 2s;
     margin-bottom: 30px;
@@ -134,7 +130,7 @@
 }
 
 #tipoRed{
-    margin-top: 160px;
+    margin-top: 125px;
 }
 
 .notResultsImg{
@@ -147,6 +143,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    width: 290px;
 }
 
 .ability{

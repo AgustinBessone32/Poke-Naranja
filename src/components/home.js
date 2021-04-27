@@ -80,12 +80,15 @@ const Home = () => {
 
                         <div className='flex2'>
 
+                            <div  id='tipoWhite'>
 
-                            <p className='itemDesc'>Experiencia base : {poke.base_experience}</p>
+                                <p className='itemDesc'>Experiencia base : {poke.base_experience}</p>
 
-                            <p className='itemDesc'>Altura : {heightPoke.charAt(1) ? `${heightPoke.charAt(0)},${heightPoke.charAt(1)} m`: `0,${heightPoke.charAt(0)} m`}</p>
+                                <p className='itemDesc'>Altura : {heightPoke.charAt(1) ? `${heightPoke.charAt(0)},${heightPoke.charAt(1)} m`: `0,${heightPoke.charAt(0)} m`}</p>
 
-                            <p className='itemDesc' >Peso : {`${poke.weight / 10} kg`}</p>
+                                <p className='itemDesc' >Peso : {`${poke.weight / 10} kg`}</p>
+
+                            </div>
 
                             <p className='point'>.</p>
 
