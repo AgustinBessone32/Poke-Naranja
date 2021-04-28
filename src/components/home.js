@@ -45,9 +45,9 @@ const Home = () => {
 
     return(
         <div className='contentPoke'>
-            <img src={Title} width='300px' height='100px'/>
+            <img src={Title} width='500px' height='180px'/>
 
-            <label for="name" className='lblSearch'>Ingrese el nombre o ID del Pokémon</label>
+            <label for="name" className='lblSearch'>Ingrese el Pokémon que quiera buscar</label>
 
             <div className='contentSearch'>
                 <input className='inpName' type='text' placeholder='Buscar...' id="name" 
@@ -55,6 +55,8 @@ const Home = () => {
                 
                 <button className='btnSearch' onClick={() => getPoke()}> Consultar </button>
             </div>
+
+            {poke === "" && !search && <img src='http://gifgifs.com/animations/creatures-cartoons/pokemon/Pikachu_plays_2.gif' width="300px" label="poke inicio"/> }
 
             {
                 search ? <p className='searching'>Buscando...</p>
