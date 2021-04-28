@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import Title from '../img/poke.png'
+import PokeBall from '../img/pokepelota.gif'
 import NotResults from '../img/pikapika.gif'
 import './home.css'
 
@@ -56,7 +57,7 @@ const Home = () => {
                 <button className='btnSearch' onClick={() => getPoke()}> Consultar </button>
             </div>
 
-            {poke === "" && !search && <img src='http://gifgifs.com/animations/creatures-cartoons/pokemon/Pikachu_plays_2.gif' width="300px" label="poke inicio"/> }
+            {poke === "" && !search && <img src={PokeBall} width="300px" label="poke inicio"/> }
 
             {
                 search ? <p className='searching'>Buscando...</p>
