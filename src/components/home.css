@@ -211,17 +211,35 @@
         
     }
 
+    .pokeImg{
+        min-width: 250px;
+        max-width: 250px;
+        margin-left: 10px;
+    }
+
+    .contentCard h3{
+        font-size: 20px;
+    }
+
+    .itemDesc{
+        font-size: 11px;
+    }
+
     .flex2{
+        align-content: space-around;
         margin-left: -15px;
         width: 250px;
-        padding: 40px
-
+        padding: 40px;
+        font-size: 5px;
     }
 
     #tipoRed{
         margin-top: 50px;
     }
 
+    .ability{
+        font-size: 6px;
+    }
 
     .point{
         display: none;

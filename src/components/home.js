@@ -46,13 +46,13 @@ const Home = () => {
 
     return(
         <div className='contentPoke'>
-            <img src={Title} width='500px' height='180px'/>
+            <img src={Title} width='400px' height='180px'/>
 
             <label for="name" className='lblSearch'>Ingrese el Pokémon que quiera buscar</label>
 
             <div className='contentSearch'>
                 <input className='inpName' type='text' placeholder='Buscar...' id="name" 
-                        value={inp} name="name" onChange={(e) => setInp(e.target.value)}/>
+                        value={inp} name="name" onChange={(e) => setInp(e.target.value.toLocaleLowerCase())}/>
                 
                 <button className='btnSearch' onClick={() => getPoke()}> Consultar </button>
             </div>
