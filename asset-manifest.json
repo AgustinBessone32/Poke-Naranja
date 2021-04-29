@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Poke-Naranja/static/css/main.0903eb86.chunk.css",
-    "main.js": "/Poke-Naranja/static/js/main.ed939937.chunk.js",
-    "main.js.map": "/Poke-Naranja/static/js/main.ed939937.chunk.js.map",
+    "main.css": "/Poke-Naranja/static/css/main.1fd8fe66.chunk.css",
+    "main.js": "/Poke-Naranja/static/js/main.eb760bcd.chunk.js",
+    "main.js.map": "/Poke-Naranja/static/js/main.eb760bcd.chunk.js.map",
     "runtime-main.js": "/Poke-Naranja/static/js/runtime-main.17c98e0b.js",
     "runtime-main.js.map": "/Poke-Naranja/static/js/runtime-main.17c98e0b.js.map",
     "static/js/2.e0ef651e.chunk.js": "/Poke-Naranja/static/js/2.e0ef651e.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.d37e8dcf.chunk.js": "/Poke-Naranja/static/js/3.d37e8dcf.chunk.js",
     "static/js/3.d37e8dcf.chunk.js.map": "/Poke-Naranja/static/js/3.d37e8dcf.chunk.js.map",
     "index.html": "/Poke-Naranja/index.html",
-    "static/css/main.0903eb86.chunk.css.map": "/Poke-Naranja/static/css/main.0903eb86.chunk.css.map",
+    "static/css/main.1fd8fe66.chunk.css.map": "/Poke-Naranja/static/css/main.1fd8fe66.chunk.css.map",
     "static/js/2.e0ef651e.chunk.js.LICENSE.txt": "/Poke-Naranja/static/js/2.e0ef651e.chunk.js.LICENSE.txt",
     "static/media/poke.c12eb752.png": "/Poke-Naranja/static/media/poke.c12eb752.png"
   },
   "entrypoints": [
     "static/js/runtime-main.17c98e0b.js",
     "static/js/2.e0ef651e.chunk.js",
-    "static/css/main.0903eb86.chunk.css",
-    "static/js/main.ed939937.chunk.js"
+    "static/css/main.1fd8fe66.chunk.css",
+    "static/js/main.eb760bcd.chunk.js"
   ]
 }
